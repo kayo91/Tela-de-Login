@@ -1,0 +1,57 @@
+
+<div class="container">
+   <div class="centro">
+    <mat-card class = "card">
+    <h1>Cadastro</h1>
+<div class="col">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>CPF</mat-label>
+      <input type="text" matInput placeholder="" value="">
+    </mat-form-field>
+   </div>
+<div class="col">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input type="text" matInput placeholder="" value="">
+    </mat-form-field>
+</div>
+<div class="col">
+    <mat-form-field class="full-width" appearance="fill">
+    <mat-label>Email</mat-label>
+       <input type="email" matInput placeholder="" value="">
+    </mat-form-field>
+</div>
+<div class="col">
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+    <div class="col">
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Repetir a senha</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            </button>
+        </mat-form-field>
+    </div>
+        <div class = "row">
+            <div class = "col" style="margin-left: -92px;"> 
+                <button mat-raised-button color="primary">Cadastrar</button>
+               
+            </div>
+            <div class = "col-2">
+                <button class="voltar" mat-raised-button color="primary">voltar</button>
+            </div>
+        </div>
+    </mat-card>
+</div>
+</div> 
+        
+        
+
+
+        

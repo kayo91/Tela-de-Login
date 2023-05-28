@@ -1,0 +1,44 @@
+
+<div class="container">
+<div class="centro">
+    <mat-card class = "card">
+      <!-- <mat-toolbar color="primary">
+            <span>Seja bem Vindo</span>
+      </mat-toolbar> -->
+
+      <mat-icon class ="icone">person</mat-icon>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput placeholder="Ex. pat@example.com" value="">
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+    <mat-label>Senha</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+    <div class="row">
+        <div class="col">
+    <section class="example-section">
+        <mat-checkbox class="example-margin"
+        color="primary"
+        >Lembre-me</mat-checkbox>
+      </section>
+    </div>
+        <div class="col-5">
+        <a class = "link" href="" target="_self" title="">Não lembro a minha senha</a>
+        <!-- <a href="../pages/pagina2.html">Pagina 2</a> -->
+        </div>
+    </div>
+    <button class = "botao" mat-raised-button color="primary">Entrar</button>
+    
+    <div class="mx-auto">
+    <p class = "paragrafo">É a sua primeira vez? <a routerLink="/cadastroLogin" class = "link2" href="" target="_self">Cadastra-se agora</a></p>
+    </div>
+
+</mat-card>
+</div>
+</div>
+
